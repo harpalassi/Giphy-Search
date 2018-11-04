@@ -4,7 +4,7 @@ var topics = ["The Sopranos", "Shameless", "Degrassi", "Alan Partridge", "The IT
 //loop to create buttons on html page
 for (var i = 0; i < topics.length; i++) {
     var newBtn = $("<button>");
-    newBtn.addClass("btn btn-primary");
+    newBtn.addClass("btn btn-primary btn-sm ml-2 mb-1");
     newBtn.attr("type", "button");
     newBtn.text(topics[i]);
     $("#buttonarea").append(newBtn);
