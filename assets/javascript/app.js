@@ -24,15 +24,15 @@ $("button").on("click", function() {
 
      for (var i = 0; i < results.length; i++) {
         var gifDiv = $("<div>");
-        gifDiv.addClass("gif-block")
+        gifDiv.addClass("gif-block col-6-sm")
         var rating = results[i].rating;
-        var p = $("<p>").text("Rating: " + rating);
+        var p = $("<p>").text("Rating: " + rating.toUpperCase());
         var gif = $("<img>");
         gif.attr("src", results[i].images.fixed_height.url);
-        gif.addClass("img-responsive")
+        gif.addClass("img-responsive center-block")
         gifDiv.prepend(p);
         gifDiv.prepend(gif);
-        $("#gifs-here").prepend(gifDiv);
+        $(".gifs-here").prepend(gifDiv);
       }
 
 

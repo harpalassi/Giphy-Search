@@ -3,6 +3,13 @@
     margin-left: 0px;
 }
 
-#gifs-here {
+.gif-block {
     margin-top: 20px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.img-responsive {
+    max-width: 300px;
+    height: 200px;
 }
