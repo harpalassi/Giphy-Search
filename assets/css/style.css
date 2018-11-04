@@ -9,7 +9,10 @@
     display: inline-block;
 }
 
+.gifs-here {
+    max-width: 80%;
+}
 .img-responsive {
-    max-width: 300px;
+    max-width: 275px;
     height: 200px;
 }
