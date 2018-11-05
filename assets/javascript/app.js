@@ -1,5 +1,5 @@
 // variables
-var topics = ["The Sopranos", "Shameless", "Degrassi", "Curb Your Enthusiasm", "The IT Crowd", "Saved By The Bell"];
+var topics = ["The Sopranos", "Shameless", "Twin Peaks", "Curb Your Enthusiasm", "The IT Crowd", "Saved By The Bell"];
 var tvShow = "";
 var queryURL = "";
 
