@@ -3,6 +3,7 @@ var topics = ["The Sopranos", "Shameless", "Degrassi", "Curb Your Enthusiasm", "
 var tvShow = "";
 var queryURL = "";
 
+
 //loop to create buttons on html page
 function renderButtons() {
 $("#buttonarea").empty();
@@ -59,3 +60,11 @@ $("button").on("click", function() {
 };
 
 renderButtons();
+
+$("#addTvShow").on("click", function(event) {
+    
+    topics.push($("#tv-input").val());
+    event.preventDefault();
+    renderButtons(); 
+});
+
