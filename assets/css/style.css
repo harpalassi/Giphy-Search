@@ -1,8 +1,15 @@
-.container {
+.container-fluid {
     margin-top: 10px;
-    margin-left: 0px;
+    /* margin-left: 0px;
+    margin-right: 0px; */
 }
 
+.form-container {
+    margin-left: 5px;
+    margin-top: 20px;
+    float: right;
+
+}
 .gif-block {
     margin-top: 20px;
     margin-left: 10px;
@@ -10,9 +17,14 @@
 }
 
 .gifs-here {
-    max-width: 80%;
+    width: 75%;
+    padding-right: 20px;
 }
 .img-responsive {
     max-width: 275px;
     height: 200px;
+}
+
+.textbox {
+    width: 200px;
 }

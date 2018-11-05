@@ -1,5 +1,5 @@
 // variables
-var topics = ["The Sopranos", "Shameless", "Degrassi", "Alan Partridge", "The IT Crowd"];
+var topics = ["The Sopranos", "Shameless", "Degrassi", "Curb Your Enthusiasm", "The IT Crowd"];
 var tvShow = "";
 var queryURL = "";
 
@@ -13,6 +13,7 @@ for (var i = 0; i < topics.length; i++) {
 }
 
 $("button").on("click", function() {
+    $(".gifs-here").empty();
     tvShow = (this.textContent);
     queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         tvShow + "&api_key=Wc14oX9Ync7H65rBWNbS7ZRMYIOJSGq7&limit=10";
@@ -24,7 +25,7 @@ $("button").on("click", function() {
 
      for (var i = 0; i < results.length; i++) {
         var gifDiv = $("<div>");
-        gifDiv.addClass("gif-block col-6-sm")
+        gifDiv.addClass("gif-block col-3-sm")
         var rating = results[i].rating;
         var p = $("<p>").text("Rating: " + rating.toUpperCase());
         var gif = $("<img>");
@@ -54,15 +55,3 @@ $("button").on("click", function() {
 
 })
 
-// $("img").on("click", function() {
-//     console.log("test"); });
-// var state = $(this).attr("data-state");
-// if (state === "still") {
-//     $(this).attr("src", $(this).attr("data-animate"));
-//     $(this).attr("data-state", "animate");
-//   } else if (state === "animate") {
-//     $(this).attr("src", $(this).attr("data-still"));
-//     $(this).attr("data-state", "still");
-//   }
-
-// });
