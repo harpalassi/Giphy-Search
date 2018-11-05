@@ -9,13 +9,13 @@ function renderButtons() {
 $("#buttonarea").empty();
 for (var i = 0; i < topics.length; i++) {
     var newBtn = $("<button>");
-    newBtn.addClass("btn btn-primary btn-sm ml-2 mb-1");
+    newBtn.addClass("btn btn-primary btn-sm ml-2 mb-1 tvButton");
     newBtn.attr("type", "button");
     newBtn.text(topics[i]);
     $("#buttonarea").append(newBtn);
 }
 
-$("button").on("click", function() {
+$(".tvButton").on("click", function() {
     $(".gifs-here").empty();
     tvShow = (this.textContent);
     queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -62,9 +62,8 @@ $("button").on("click", function() {
 renderButtons();
 
 $("#addTvShow").on("click", function(event) {
-    
-    topics.push($("#tv-input").val());
     event.preventDefault();
+    topics.push($("#tv-input").val());
     renderButtons(); 
 });
 
