@@ -22,6 +22,7 @@ body {
 
 .container-fluid {
     margin-top: 10px;
+    margin-left: 20px;
 }
 
 .form-container {
@@ -40,9 +41,10 @@ body {
 
 .gifs-here {
     width: 70%;
-    padding-right: 10px;
+
 }
 .img-responsive {
     max-width: 275px;
     height: 175px;
+    margin-right: 20px;
 }
