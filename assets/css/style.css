@@ -23,7 +23,9 @@ h6 {
 }
 .container-fluid {
     margin-top: 10px;
-    margin-left: 20px;
+}
+#buttonarea {
+    margin-left: 10px;
 }
 .form-container {
     margin-top: 20px;
@@ -39,6 +41,7 @@ h6 {
 }
 .gifs-here {
     width: 70%;
+    margin-left: 10px;
 
 }
 .img-responsive {
