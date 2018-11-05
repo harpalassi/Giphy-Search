@@ -4,6 +4,8 @@ var tvShow = "";
 var queryURL = "";
 
 //loop to create buttons on html page
+function renderButtons() {
+$("#buttonarea").empty();
 for (var i = 0; i < topics.length; i++) {
     var newBtn = $("<button>");
     newBtn.addClass("btn btn-primary btn-sm ml-2 mb-1");
@@ -54,4 +56,6 @@ $("button").on("click", function() {
 })
 
 })
+};
 
+renderButtons();
