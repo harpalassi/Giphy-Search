@@ -9,7 +9,7 @@ function renderButtons() {
 $("#buttonarea").empty();
 for (var i = 0; i < topics.length; i++) {
     var newBtn = $("<button>");
-    newBtn.addClass("btn btn-primary btn-sm ml-2 mb-1 tvButton");
+    newBtn.addClass("btn btn-primary btn-sm ml-2 mb-1 mt-3 tvButton");
     newBtn.attr("type", "button");
     newBtn.text(topics[i]);
     $("#buttonarea").append(newBtn);
@@ -30,7 +30,7 @@ $(".tvButton").on("click", function() {
         var gifDiv = $("<div>");
         gifDiv.addClass("gif-block col-3-sm")
         var rating = results[i].rating;
-        var p = $("<p>").text("Rating: " + rating.toUpperCase());
+        var p = $("<p>").text("Rated: " + rating.toUpperCase());
         var gif = $("<img>");
         gif.attr("src", results[i].images.original_still.url);
         gif.attr("data-still", results[i].images.original_still.url)
